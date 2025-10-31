@@ -1,0 +1,24 @@
+/*css Reset-Target Everything*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/********** SWATCHES ****************/
+.swatches {
+    display: flex;
+}
+
+
+.swatch .swatch-value {
+    background-color: #4b2d1e;
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    width: 3rem; /* Root Font size:16px */
+    
+}
+
+.swatch .swatch-name {
+
+    text-align: center;
+}
