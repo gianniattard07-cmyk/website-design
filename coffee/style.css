@@ -46,6 +46,7 @@ p{
 /********** SWATCHES ****************/
 .swatches {
     display: flex;
+    gap: 0.5rem;
 }
 
 
