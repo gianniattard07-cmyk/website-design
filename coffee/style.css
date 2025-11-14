@@ -2,9 +2,16 @@
 
 :root{
     --primary:  #4b2d1e;
+    --primary-tint:  #6e4632;
+    --primary-shade:  #30190e;
+
     --dark: #362d2a;
     --light: #ffffff;
-    --muted: #f8f6f5;
+
+    --muted: #e8e6e5;
+    --muted-tint: #ececec;
+    --muted-shade: #dddcdc;
+
     --font-normal: Roboto, Arial, Sans-serif;
     --font-heading:'Noto Serif', serif;
     
@@ -46,6 +53,37 @@ padding: var(--space-1) var(--space-2);
 cursor: pointer;
 }
 
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--light);
+}
+.btn-primary:hover {
+background-color: var(--primary-tint);
+}
+
+.btn-primary:active {
+    background-color: var(--primary-shade);
+}
+
+.btn-muted {
+    background-color: var(--muted);
+    color: var(--dark);
+}
+.btn-muted:hover {
+background-color: var(--muted-tint);
+}
+
+.btn-muted:active {
+    background-color: var(--muted-shade);
+}
+
+.link{
+    color: var(--primary);
+    text-decoration: underline;
+}
+.link:hover{
+    background-color: var(--primary-tint);
+}
 
 /**** COLOR ***********/
 
