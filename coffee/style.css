@@ -30,6 +30,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: var(--font-normal);
@@ -96,6 +97,17 @@ background-color: var(--muted-tint);
 .text-dark {color: var(--dark);}
 .text-light {color: var(--light);}
 .text-muted{color: var(--muted);}
+
+/********** commponents****************/
+
+.product-image img{
+    aspect-ratio: 16/9;
+    width: 100%;
+
+    object-fit: cover;
+    border: 4px solid var(--light);
+    border-radius: var(--space-2);
+}
 
 /********** LAYOUT****************/
 .d-flex {display: flex;} 
