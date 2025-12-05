@@ -124,6 +124,33 @@ background-color: var(--muted-tint);
     left: var(--space-2);
     top: var(--space-2);
 }
+.product-image{
+    position: relative;
+    /*tells all children this is the parent*/
+}
+.product-image img{
+    aspect-ratio: 16/9;
+    width: 100%;
+
+    object-fit: cover;
+    border: 4px solid var(--light);
+    border-radius: var(--space-2);
+}
+.product-image .product-tag{
+    background-color: var(--dark);
+    color: var(--light);
+    box-shadow: var(--shadow-light);
+
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--space-3);
+
+    position: absolute;
+    left: var(--space-2);
+    top: var(--space-2);
+}
+
+
+
 
 .tags{
     display: flex;
@@ -204,4 +231,30 @@ background-color: var(--muted-tint);
 .swatch .swatch-name {
     
     text-align: center;
+}
+
+/*****text*****/
+
+
+
+.line-1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+    height: 1.5em;
+    overflow: clip;
+    text-overflow: ellipsis;
+}
+
+.line-2{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    height: 3em;
+    overflow: clip;
+    text-overflow: ellipsis;
 }
