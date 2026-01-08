@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCAST - Home</title>
+    <style>
+        /* DESIGN TOKENS */
+        @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+        :root {
+            --mcast-blue: #040340;
+            --white: #FFFFFF;
+            --grey: #E5E5E5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'ABeeZee', sans-serif;
+            color: var(--mcast-blue);
+            line-height: 29px; /* */
+            /* MISTAKE: missing hyphen in letter-spacing */
+            letterspacing: 0.09em; 
+        }
+
+        /* FLEXBOX UTILITIES */
+        .flex-col { display: flex; flex-direction: column; }
+        .flex-row { display: flex; justify-content: space-between; align-items: center; }
+        .gap-15 { gap: 15px; }
+
+        /* HEADER & NAV */
+        header {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 12px;
+            border-radius: 25px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .utility-nav {
+            background-color: var(--white);
+            border-radius: 20px;
+            padding: 8px;
+            font-size: 11px;
+        }
+
+        .utility-nav a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* MAIN BUTTONS */
+        .hero-section {
+            padding: 20px;
+        }
+
+        .btn-main {
+            background-color: var(--mcast-blue);
+            color: var(--white);
+            text-decoration: none;
+            padding: 45px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 4px;
+            /* MISTAKE: Spelled 'background' wrong */
+            bakground-transition: 0.3s; 
+        }
+
+        .btn-main:hover {
+            opacity: 0.9;
+        }
+
+        /* BANNER SECTION */
+        .banner {
+            width: 100%;
+            /* MISTAKE: Spelled 'display' wrong */
+            disply: block;
+        }
+
+        /* FOOTER */
+        footer {
+            /* MISTAKE: Standard CSS uses 'color', not 'colour' */
+            background-colour: var(--mcast-blue);
+            color: var(--white);
+            padding: 40px 20px;
+        }
+
+        .footer-links h3 {
+            border-bottom: 1px solid var(--white);
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .social-strip {
+            background-color: var(--white);
+            padding: 15px;
+            border-radius: 30px;
+            margin: 20px 0;
+        }
+
+        .contact-info {
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            /* MISTAKE: spelled 'white' with an extra 'e' */
+            color: whitee;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <input type="text" class="search-bar" placeholder="Search bar">
+        <nav class="utility-nav flex-row">
+            <img src="images/mcast-logo.png" alt="MCAST" height="15">
+            <a href="#">Staff Intranet</a>
+            <a href="#">Students</a>
+            <a href="#">Online System</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section flex-col gap-15">
+            <a href="full-time.html" class="btn-main">Full-Time Course</a>
+            <a href="#" class="btn-main">Part-Time Course</a>
+            <a href="#" class="btn-main">Apply Online</a>
+        </section>
+
+        <section>
+            <img src="images/graudation-2025.jpg" alt="Graduation" class="banner">
+        </section>
+
+        <section class="hero-section flex-col gap-15">
+            <div class="flex-col gap-15" style="background:#fff; border:1px solid #ccc; padding:10px; border-radius:20px; text-align:center;">
+                <p>MCAST Prospectus 2025/2026</p>
+            </div>
+            <div class="flex-col gap-15" style="background:#fff; border:1px solid #ccc; padding:10px; border-radius:20px; text-align:center;">
+                <p>News</p>
+            </div>
+        </section>
+
+        <section>
+            <img src="images/success-stories.jpg" alt="Success Stories" class="banner">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <h3>LEARN WITH US</h3>
+            <ul>
+                <li><a href="#">Apply Now</a></li>
+                <li><a href="full-time.html">Full-Time Course</a></li>
+                <li><a href="#">Prospectus</a></li>
+            </ul>
+        </div>
+
+        <div class="social-strip flex-row">
+            <img src="fb-icon.png" alt="FB" height="20">
+            <img src="images/insta-icon.png" alt="IG" height="20">
+            <img src="images/yt-icon.png" alt="YT" height="20">
+        </div>
+
+        <div class="contact-info">
+            <p><strong>MCAST Main Campus</strong></p>
+            <p>Triq Kordin, Paola, Malta PLA9032</p>
+            <p style="margin-top:15px;">Tel: +356 2398 7100</p>
+            <p>Email: <a href="mail-to:information@mcast.edu.mt">information@mcast.edu.mt</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
