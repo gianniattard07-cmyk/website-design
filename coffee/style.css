@@ -257,4 +257,37 @@ background-color: var(--muted-tint);
     height: 3em;
     overflow: clip;
     text-overflow: ellipsis;
+
+
+}
+
+/*** Contect ****/
+.contact-form label{
+    display:black;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+    appearance: none;
+    font-family: var(--font-normal);
+    font-size: 1em;
+
+    border-color: var(--muted);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+
+
+    display: block;
+    width: 100%;
+    padding: var(--space-1);
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .input-section {
+    margin: var(--space-2) 0;
 }
